@@ -1,10 +1,9 @@
 {
     "categories": {
-        "0": "ecommerce",
-        "1": "payment",
-        "2": "email",
-        "3": "technical",
-        "4": "data (things)"
+        "0": "email",
+        "1": "technical",
+        "2": "data (things)",
+        "3": "mobile"
     },
     "demo_page": "https://jsonest.bubbleapps.io/",
     "description": "Get deep-nested, highly-customizable JSON data from a thing or list of things.  Rename JSON keys and reformat their values.  Dates - Bubble ISO to other formats. Currency - numbers-to-USD (i.e. 2 to $2.00).  Strings to booleans (i.e. \"color\" : \"blue\"   to   \"color\" : {\"blue\" : true).  Phone - (i.e. 2125551212 to (212) 555-1212 ) Great SendGrid companion or other services that do not convert data types or interpret conditionals besides booleans.   Runs as a server-side workflow action for API workflows.\n\nEDITOR\nhttps://bubble.is/page?name=index&id=jsonest&tab=tabs-1\n\nDEMO\nhttps://jsonest.bubbleapps.io/\n\n",

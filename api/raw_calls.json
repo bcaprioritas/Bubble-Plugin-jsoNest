@@ -1,0 +1,12 @@
+{
+    "calls": {
+    },
+    "human": "Whatsapp",
+    "shared_headers": {
+        "ACH": {
+            "key": "",
+            "private": true,
+            "value": ""
+        }
+    }
+}

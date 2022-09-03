@@ -383,8 +383,22 @@
 
 
          //create JSON string from JS object                      ** indent property**
-         outputJSONString = JSON.stringify( outputObject, null, properties.indent ); 
+        // outputJSONString = JSON.stringify( outputObject, null, properties.indent ); 
 
+        var cache = [];
+        outputJSONString = JSON.stringify(outputObject, (key, value) => {
+          if (typeof value === 'object' && value !== null) {
+            // Duplicate reference found, discard key
+            if (cache.includes(value)) return;
+
+            // Store value in our collection
+            cache.push(value);
+          }
+          return value;
+        }, properties.indent );
+        cache = null; //garbage collection
+
+             
          // wrap in array?
          if (properties.wrap_in_array === true) {
             outputJSONString = "[" + outputJSONString + "]";   
